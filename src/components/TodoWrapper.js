@@ -33,7 +33,7 @@ export const TodoWrapper = () => {
     <TodoForm addTodo = {addTodo} />
     {/* to generate a todo to each value of the state */}
     {todos.map ((todo, index) => (
-        isEditing ? (
+        todo.isEditing ? (
             <EditTodoForm/>
         ) : (
             <Todo task = {todo} key = {index} toggleComplete={toggleComplete} 
