@@ -16,7 +16,7 @@ export const TodoForm = ({addTodo}) => {
        addTodo(value);
 
        // limpar o campo
-       //setValue("")
+       setValue("")
 
     }
   return (
