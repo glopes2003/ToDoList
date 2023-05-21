@@ -1,11 +1,9 @@
 import React from 'react'
 
-export const EditToDoForm = () => {
-  return (
-    <div>EditToDoForm</div>
-  )
-}
-
+export const EditTodoForm = ({editTodo, task}) => {
+    const [value, setValue] = useState(" ");  
+    const handleSubmit = e => {
+        
 
 
 
