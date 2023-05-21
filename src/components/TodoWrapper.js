@@ -23,6 +23,9 @@ export const TodoWrapper = () => {
         setTodos(todos.filter(todo => todo.id !== id))
     }
 
+    const editTodo = id => {
+        setTodos(todos.map(todo => todo.id === id ? {...todo, isEditing: !todo.isEditing} : todo))
+    }
 
   return (
    <div className='TodoWrapper'>
